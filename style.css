@@ -1,0 +1,116 @@
+/* Base styles for popup body */
+body {
+    width: 300px;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 15px;
+    background-color: #f9f9f9;
+}
+
+/* Header styling */
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Textarea input styling */
+#input-text {
+    width: calc(100% - 20px);
+    height: 100px;
+    padding: 10px;
+    margin: 10px auto;
+    display: block;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+/* Language selection area */
+#language-selection {
+    margin: 15px 0;
+}
+
+#language-selection h3 {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Language options container */
+.languages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+/* Individual language option */
+.language {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.language img {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #fff;
+}
+
+.language label {
+    font-size: 14px;
+    color: #444;
+    cursor: pointer;
+}
+
+/* Translate button styling */
+#translate-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+#translate-button:hover {
+    background-color: #45a049;
+}
+
+/* Output container styling */
+#output-container {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f3f4f6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#output-container h3 {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+}
+
+#output-text {
+    font-size: 14px;
+    color: #000;
+    font-weight: normal;
+    min-height: 30px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    word-wrap: break-word;
+    line-height: 1.5;
+}

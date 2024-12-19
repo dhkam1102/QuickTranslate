@@ -1,16 +1,39 @@
-<!-- popup.html (The UI for the extension) -->
-
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translate Text</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h3>Translate Text</h3>
+    <h2>Translate Text</h2>
     <textarea id="input-text" placeholder="Enter or paste text here"></textarea>
+    <div id="language-selection">
+        <h3>Select Target Language</h3>
+        <div class="languages">
+            <div class="language">
+                <input type="radio" name="language" value="ko" id="korean" checked>
+                <img src="images/south-korea.png" alt="Korean Flag">
+                <label for="korean">Korean</label>
+            </div>
+            <div class="language">
+                <input type="radio" name="language" value="ja" id="japanese">
+                <img src="images/japan.png" alt="Japanese Flag">
+                <label for="japanese">Japanese</label>
+            </div>
+            <div class="language">
+                <input type="radio" name="language" value="zh" id="chinese">
+                <img src="images/china.png" alt="Chinese Flag">
+                <label for="chinese">Chinese</label>
+            </div>
+        </div>
+    </div>
     <button id="translate-button">Translate</button>
-    <div id="output-text"></div>
+    <div id="output-container">
+        <h3>Translation Result</h3>
+        <div id="output-text"></div>
+    </div>
     <script src="popup.js"></script>
 </body>
 </html>
